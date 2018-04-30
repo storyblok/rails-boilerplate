@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is an example of how to integrate the headless CMS Storyblok to a Ruby on Rails project.
 
-Things you may want to cover:
+You can read the full "how to article" at [www.storyblok.com/tp/ruby-on-rails-cms](https://www.storyblok.com/tp/ruby-on-rails-cms).
 
-* Ruby version
+## Installation
 
-* System dependencies
+First exchange the token Dv2ok3DqODzzb8QUuN2XCgtt with your preview token from Storyblok`s settings page in following files:
 
-* Configuration
+* pages_controller.rb
+* page.liquid
 
-* Database creation
+Then install the gems and start the server.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+~~~console
+bundle install
+rails server -p 3000
+~~~
