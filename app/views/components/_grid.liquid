@@ -1,0 +1,8 @@
+{{ blok._editable }}
+<div class="container">
+  <div class="row text-center justify-content-center pt-5 pb-5">
+    {% for item in blok.columns %}
+      {% include item.component with blok: item %}
+    {% endfor %}
+  </div>
+</div>

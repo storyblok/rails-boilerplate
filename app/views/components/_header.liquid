@@ -1,0 +1,22 @@
+{{ blok._editable }}
+<header>
+  <div class="container">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand" href="/">
+      <img src="//a.storyblok.com/f/43698/437x202/371b07400b/img_logo_new.png" height="30" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-2651eb25-213b-4216-8d83-354812817602" aria-controls="navbar-2651eb25-213b-4216-8d83-354812817602" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-2651eb25-213b-4216-8d83-354812817602">
+        {% if blok.nav_links != blank %}
+          <ul class="navbar-nav mr-auto">
+            {% for item in blok.nav_links %}
+              {% include item.component with blok: item %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+</header>
