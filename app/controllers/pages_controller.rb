@@ -17,6 +17,6 @@ class PagesController < ApplicationController
     Liquid::Template.file_system = Liquid::LocalFileSystem.new('app/views/components')
 
     template = Liquid::Template.parse(File.read('app/views/layouts/page.liquid'))
-    render text: template.render!(assigns.stringify_keys, {})
+    render html: template.render!(assigns.stringify_keys, {}).html_safe
   end
 end
