@@ -1,3 +1,6 @@
+> [!WARNING]
+> This repository is no longer maintained.
+
 # README
 
 This project is an example of how to integrate the headless CMS Storyblok to a Ruby on Rails project.
